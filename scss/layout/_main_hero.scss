@@ -1,0 +1,14 @@
+.hero_container{
+    width: 100%;
+    height: 70vh;
+    //background: $gradient-one;
+    padding: $padding;
+    //flexbox
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        text-align: center;
+    }
+}

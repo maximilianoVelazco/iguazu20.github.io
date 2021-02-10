@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: #232766;
+  text-transform: capitalize; }
+
+h1 {
+  font-size: 46px; }
+
+h2 {
+  font-size: 36px;
+  padding-bottom: 50px; }
+
+h3 {
+  font-size: 26px;
+  font-weight: 900;
+  padding-bottom: 25px; }
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #303538;
+  line-height: 27px;
+  padding-bottom: 50px; }
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #232766;
+  text-transform: capitalize; }
+  a:hover {
+    font-weight: 900; }
+
+.active {
+  font-weight: 900; }
+
+.a_btn {
+  font-size: 13px;
+  width: 100%;
+  height: 100%; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none; }
+
+body, html {
+  background-color: #fdfdfd; }
+
+.primary_btn, .secondary_btn, .terciary_btn {
+  width: 80%;
+  display: inline-block;
+  padding: 14px 0px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: ease-in-out 0.3s; }
+
+.secondary_btn {
+  background-color: #fdfdfd;
+  border: 2px solid #303538;
+  color: #303538; }
+  .secondary_btn:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3); }
+
+.primary_btn, .terciary_btn {
+  border: 2px solid transparent;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3); }
+  .primary_btn:hover, .terciary_btn:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5); }
+
+.primary_btn {
+  background-color: #f56a95;
+  color: #fdfdfd; }
+
+.terciary_btn {
+  background-color: #fdfdfd;
+  color: #303538; }
+
+.tarjeta {
+  width: 100%;
+  height: 700px;
+  padding: 0px 18px;
+  padding-top: 30px;
+  background: linear-gradient(to right, #eb7999 0%, #f9c8b7 100%);
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px; }
+  .tarjeta h2 {
+    text-align: center; }
+  .tarjeta h3 {
+    text-align: center;
+    padding: 10px 50px;
+    margin-top: -40px;
+    border-radius: 2px;
+    background-color: #fdfdfd; }
+
+.header_container {
+  width: 100%;
+  height: 71px;
+  position: fixed;
+  padding: 0px 18px;
+  background: #fdfdfd;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header_container .logo {
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    z-index: 999; }
+  .header_container .menu_button_container, .header_container .nav_container .social_container .icon_container {
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; }
+    .header_container .menu_button_container .menu_button, .header_container .nav_container .social_container .icon_container .menu_button {
+      width: 100%;
+      display: inline-block; }
+    .header_container .menu_button_container .cerrar_menu, .header_container .nav_container .social_container .icon_container .cerrar_menu {
+      display: none; }
+  .header_container .nav_container {
+    width: 100%;
+    background-color: #fdfdfd;
+    position: absolute;
+    top: 70px;
+    left: -500px;
+    z-index: -1;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header_container .nav_container ul {
+      padding: 40px 0px;
+      text-align: center; }
+      .header_container .nav_container ul li {
+        padding: 10px 0px; }
+    .header_container .nav_container .social_container {
+      width: 100%;
+      padding-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .header_container .nav_container .social_container .icon_container img {
+        width: 100%; }
+    .header_container .nav_container .contact_container {
+      width: 100%;
+      padding: 25px 0px;
+      background: linear-gradient(to right, #eb7999 0%, #f9c8b7 100%);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .header_container .nav_container .contact_container .terciary_btn {
+        width: 70%;
+        margin: 0px;
+        padding-top: 12px;
+        padding-bottom: 12px; }
+        .header_container .nav_container .contact_container .terciary_btn a {
+          text-transform: uppercase; }
+
+.is_active {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  left: 0px !important;
+  z-index: 998; }
+
+.not_active {
+  display: none !important; }
+
+.main_container {
+  padding-top: 70px; }
+
+.hero_container {
+  width: 100%;
+  height: 70vh;
+  padding: 0px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero_container p {
+    text-align: center; }
+
+/*
+sass/
+|
+|– utilities/
+|   |– _variables.sass    // Variables
+|   |– _functions.sass    // Funciones
+|   |– _mixins.sass       // Mixins
+|
+|– base/
+|   |– _reset.sass        // Reset/normalize
+|   |– _typo.sass   // Tipografías
+|
+|– components
+|   |– _buttons.acss      // Bot
+|   |– _jumbo.sass     // Jumbo
+|
+|– layout/
+|   |– _navigation.sass   // Navegación
+|   |– _grid.sass         // Grid
+|   |– _header.sass       // Header
+|   |– _footer.sass       // Footer
+|   |– _forms.sass        // Formularios
+|
+|– views/
+|   |– _home.sass         // Estilos de la página de inicio
+|   |– _contact.sass      // Estilos de la página de contacto
+|
+|– themes/
+|   |– _theme.sass        // Default theme
+|   |– _admin.sass        // Admin theme
+|
+|– vendors/
+|   |– _bootstrap.sass    // Bootstrap
+|   |– _jquery-ui.sass    // jQuery UI
+|
+|– main.sass              // Archivo principal
+*/
+
+/*# sourceMappingURL=style.css.map */

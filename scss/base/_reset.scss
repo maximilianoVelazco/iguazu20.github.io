@@ -1,0 +1,20 @@
+
+// Reset/normalize
+
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+
+body, html{
+    background-color: $blanco;
+}
+
+

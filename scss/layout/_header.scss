@@ -1,0 +1,103 @@
+.header_container{
+    width: 100%;
+    height: 71px;
+    position: fixed;
+    padding: $padding;
+    background: $blanco;
+    z-index: 999;
+    // flexbox
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // provisorio
+    .logo{
+        padding: 0px;
+        margin: 0px;
+        font-size: 25px;
+        z-index: 999;
+    }
+    //fin provisorio
+
+    .menu_button_container{
+        width: 45px;
+        height: 45px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        .menu_button{
+            width: 100%;
+            display: inline-block;
+        }
+        .cerrar_menu{
+            display: none;
+        }
+    }
+
+    //Contenedor del menu desplegable
+    .nav_container{
+        width: 100%;
+        background-color: $blanco;
+        position: absolute;
+        top: 70px;
+        left: -500px;
+        z-index: -1;
+        transition: $transition-one;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul{
+            padding: 40px 0px;
+            text-align: center;
+            li{
+                padding: 10px 0px;
+            }
+        }
+        .social_container{
+            width: 100%;
+            padding-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon_container{
+                @extend .menu_button_container;
+                img{
+                    width: 100%;
+                }
+            }
+        }    
+        .contact_container{
+            width: 100%;
+            padding: 25px 0px;
+            background: $gradient-one;
+            box-shadow: $medium_shadow;
+            // flexbox
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .terciary_btn{
+                width: 70%;
+                margin: 0px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                a{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+.is_active{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    left: 0px !important;
+    z-index: 998;
+}
+
+.not_active{
+    display: none !important;
+}
