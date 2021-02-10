@@ -12,12 +12,12 @@ h1 {
 
 h2 {
   font-size: 36px;
-  padding-bottom: 50px; }
+  padding-bottom: 40px; }
 
 h3 {
   font-size: 26px;
   font-weight: 900;
-  padding-bottom: 25px; }
+  padding-bottom: 30px; }
 
 p {
   font-family: "Raleway", sans-serif;
@@ -88,13 +88,55 @@ body, html {
   background-color: #fdfdfd;
   color: #303538; }
 
-.tarjeta {
+.tarjetas {
   width: 100%;
-  height: 400px;
-  padding: 0px 18px;
-  padding-top: 30px; }
-  .tarjeta h2 {
-    text-align: center; }
+  padding: 0px 0px 60px 70px;
+  display: flex;
+  flex-direction: column; }
+  .tarjetas .imagen_tarjeta {
+    width: 100%;
+    height: 40vh;
+    background-color: #b6b6b6;
+    position: relative; }
+  .tarjetas .a01 {
+    background-image: url(../../media/imagenes/image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .tarjetas .a02 {
+    background-size: cover; }
+  .tarjetas .texto_tarjeta {
+    margin-top: -20px;
+    padding-right: 20px;
+    position: relative; }
+    .tarjetas .texto_tarjeta .titulo_tarjeta {
+      font-size: 40px; }
+
+.tarjetas_izq {
+  padding: 0px 70px 60px 0px; }
+
+.texto_tarjeta_izq {
+  padding-left: 20px;
+  padding-right: 0px !important;
+  text-align: end;
+  position: relative; }
+  .texto_tarjeta_izq::before {
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: #232766;
+    position: absolute;
+    top: -30px;
+    right: -20px; }
+
+.texto_tarjeta_der::before {
+  content: "";
+  width: 90px;
+  height: 5px;
+  background-color: #232766;
+  position: absolute;
+  top: -30px;
+  left: -20px; }
 
 .header_container {
   width: 100%;
