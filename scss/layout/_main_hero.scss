@@ -1,7 +1,10 @@
 .hero_container{
     width: 100%;
     height: 70vh;
+    max-height: 400px;
     //background: $gradient-one;
+    background-size: cover;
+    background-position: center;
     padding: $padding;
     //flexbox
     display: flex;
